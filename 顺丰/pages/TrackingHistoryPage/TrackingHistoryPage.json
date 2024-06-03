@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Search":"/components/search/search",
+    "Process":"/components/process/process"
+  }
+}

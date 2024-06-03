@@ -1,0 +1,36 @@
+/* pages/TrackingHistoryPage/TrackingHistoryPage.wxss */
+.wrapper{
+  margin: 0 auto;
+  width:600rpx ;
+}
+/* 头部 */
+.header{
+  margin-top: 20rpx;
+  display: flex;
+  font-size: 26rpx;
+  align-items: center;
+}
+.header image{
+  height: 60rpx;
+  width: 60rpx;
+  margin-right: 30rpx;
+}
+/* 广告 */
+.ad image{
+  margin-top: 30rpx;
+  height: 280rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+  border-radius: 16rpx;
+}
+.contain{
+  margin-top: 30rpx;
+  padding: 20rpx;
+}
+.border{
+  padding: 10rpx;
+  background-color: #add3ff;
+  
+  border-radius: 14rpx;
+  font-size: 26rpx;
+}

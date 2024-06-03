@@ -1,0 +1,78 @@
+<view class="container">
+  <view class="header">
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image class="avatar" src="{{userInfo.avatarUrl || '/images/default_avatar.png'}}"></image>
+    </button>
+    <view class="nickname-wrapper">
+      <text class="phone">{{userInfo.nickName}}</text>
+    </view>
+    <text class="membership">黑钻会员</text>
+    <text class="points">积分 15</text>
+  </view>
+  <view class="info">
+    <text class="info-item">优惠券 12</text>
+    <text class="info-item">新速运运卡 0</text>
+    <text class="info-item">我的兑换 0</text>
+    <text class="info-item">碳能量 0</text>
+  </view>
+<view class="menu">
+    <view class="menu-item">
+      <image src="/images/address.png" alt="地址簿"></image>
+      <text>地址簿</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/application.png" alt="发单申请"></image>
+      <text>发单申请</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/paying.png" alt="待支付"></image>
+      <text>待支付</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/ssearch.png" alt="服务查询"></image>
+      <text>服务查询</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/IA.png" alt="实名认证"></image>
+      <text>实名认证</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/customer service.png" alt="客服中心"></image>
+      <text>客服中心</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/courier.png" alt="专属快递员"></image>
+      <text>专属快递员</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/date.png" alt="签到"></image>
+      <text>签到</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/telp.png" alt="号码保护"></image>
+      <text>号码保护</text>
+    </view>
+    <view class="menu-item">
+      <image src="/images/prefer.png" alt="偏好设置"></image>
+      <text>偏好设置</text>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="footer-item">
+      <image src="/images/re.png" bindtap="exit" alt="顺丰回收" ></image>
+      <text>退出登录</text>
+    </view>
+    <view class="footer-item">
+      <image src="/images/student.png" alt="学生专享"></image>
+      <text>学生专享</text>
+    </view>
+    <view class="footer-item">
+      <image src="/images/s.png" alt="退换中心"></image>
+      <text>退换中心</text>
+    </view>
+    <view class="footer-item">
+      <image src="/images/m.png" alt="多账号"></image>
+      <text>多账号</text>
+    </view>
+  </view>
+</view>

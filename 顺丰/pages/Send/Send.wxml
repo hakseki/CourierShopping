@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<view class="wrapper">
+<view>
+<image src="/images/five.jpg" mode="aspectFit"></image>
+</view>
+<view class="box0">
+常规
+</view>
+
+<view class="box2">
+<view class="picture">
+<image src="/images/three.jpg"></image></view>
+<view class="left">
+<view class="big">寄件人信息</view>
+<view class="input-wrap">
+<input type="text" placeholder="输入真实姓名" class="small" />
+</view>
+</view>
+<view class="right" bindtap="btn">地址簿</view>
+</view>
+
+<view class="box2">
+<view class="picture">
+<image src="/images/two.jpg"></image></view>
+<view class="left">
+<view class="big">收件人信息</view>
+<view class="input-wrap">
+<input type="text" placeholder="支持顺丰ID、智能填写、图片识别" class="small" />
+</view>
+</view>
+<view class="right" bindtap="btn">地址簿</view>
+</view>
+
+<view class="box3">
+<view class="zero">
+<view class="left">
+上门取件
+</view>
+<view class="right">
+服务点自寄
+</view>
+</view>
+<view class="one">
+<view class="left">
+付款方式
+</view>
+<view class="right">
+寄付现结>
+</view>
+</view>
+<view class="two">
+<view class="left">
+保价|细则
+</view>
+<view class="right">
+未保价最高赔付7倍运费
+</view>
+</view>
+<view class="three">
+<view class="left">
+增值服务
+</view>
+<view class="right">
+>
+</view>
+</view>
+<view class="four">
+<view class="left">
+信息加密
+</view>
+<view class="right">
+<image src="/images/one.jpg"></image>
+</view>
+</view>
+<view class="text">
+纸质单和顺丰自助查单渠道均会对收寄双方姓名/电话/地址进行隐藏处理，除特殊情形(含法定情形)外不会对外提供。
+</view>
+</view>
+
+<view class="box4">
+<view class="left">
+<view class="big">预估总价￥</view>
+<view class="small"><image src="/images/four.jpg"></image>阅读并同意《电子运单契约条款》</view>
+</view>
+<button>下单</button>
+</view>
+</view>

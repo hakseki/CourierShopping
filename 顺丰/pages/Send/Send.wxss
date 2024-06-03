@@ -1,0 +1,217 @@
+/**index.wxss**/
+.box image{
+ width: 760rpx;
+ height: 160rpx;
+}
+.wrapper{
+  position: relative;
+  margin: 0 auto;
+  width: 640rpx;
+  border-radius: 14rpx;
+  margin-top: -80rpx;
+  z-index: 1
+}
+.box0{
+  margin-top: 20rpx;
+  border-radius: 72rpx;
+  border-color: rgb(250, 248, 245);
+  background: linear-gradient(to right, #ffffff, #aadfaa);
+  color: rgb(102, 102, 199);
+  width: 100rpx;
+  height: 50rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+
+ 
+.big{
+  font-weight: 500;
+}
+view{
+  font-weight: 400;
+}
+.box1 .left .big{
+  font-size: 32rpx;
+  margin-left: 80rpx;
+}
+.box1 .left .input-wrap {
+  display: flex;
+  align-items: center;
+}
+.box1 .left .small {
+  font-size: 26rpx;
+  margin-left: 80rpx;
+  width: 160rpx;
+}
+.box1 .right{
+  font-size: 26rpx;
+  font-weight: 400;
+ margin-right: 20rpx;
+}
+
+.box2{
+  align-items: center; 
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  background: linear-gradient(to right, #ffffff, hsl(120, 65%, 91%));
+}
+.box2 .picture image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.box2 .left .big{
+  font-size: 32rpx;
+}
+.box2 .left .input-wrap {
+  display: flex;
+  align-items: center;
+}
+.box2 .left .small {
+  font-size: 26rpx;
+  width: 440rpx;
+}
+.box2 .right{
+  font-size: 26rpx;
+  font-weight: 400;
+}
+
+.box3{
+  margin-bottom: 10rpx;
+  height: 580rpx;
+ 
+  background: linear-gradient(to right, #ffffff, hsl(120, 65%, 91%));
+}
+.box3 .zero{
+  display: flex;
+}
+.box3 .zero .left{
+  border-radius: 48rpx;
+  margin-left: 20rpx;
+  width: 50%;
+  margin-top: 4rpx;
+  height: 70rpx;
+  width: 350rpx;
+  font-weight: 400;
+  text-align: center;
+  line-height: 70rpx;
+}
+.box3 .zero .right{
+  border-radius: 48rpx;
+  margin-right: 20rpx;
+  width: 50%;
+  margin-top: 4rpx;
+  height: 70rpx;
+  width: 350rpx;
+  background-color: rgb(132, 246, 210);
+  text-align: center;
+  line-height: 70rpx;
+  color: #ffffff;
+}
+.box3 .one{
+  align-items: center;
+  height: 70rpx;
+ 
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+.box3 .one .left{
+  font-weight: 900;
+}
+.box3 .one .right{
+  font-weight: 900;
+}
+.box3 .two{
+  align-items: center;
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+.box3 .two .left{
+  font-weight: 900;
+}
+.box3 .two .right{
+  font-size: 24rpx;
+}
+.box3 .three{
+  align-items: center;
+  height: 70rpx;
+ 
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+.box3 .three .left{
+  font-weight: 900;
+}
+.box3 .three .right{
+  font-weight: 900;
+}
+
+.box3 .four{
+  height: 70rpx;
+  width: 740rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rpx;
+}
+.box3 .four .left{
+  font-weight: 900;
+}
+.box3 .four .right{
+  margin-right: 10rpx;
+}
+.box3 .four .right image{
+  width: 100rpx;
+  height: 56rpx;
+  margin-right: 90rpx;
+}
+.box3 .text{
+  font-size: 26rpx;
+  height: 60rpx;
+ 
+}
+
+.box4{
+  margin-top: 40rpx;
+  align-items: center;
+  height: 100rpx;
+ 
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+  background: linear-gradient(to right, #ffffff, hsl(120, 65%, 91%));
+}
+.box4 .left image{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+}
+.box4 .left .big{
+  font-size: 32rpx;
+  color: crimson;
+  margin-left: 10rpx;
+}
+.box4 .left .small{
+  font-size: 26rpx;
+  width: 440rpx;
+}
+.box4 button {
+  font-weight: 900;
+  background-color: rgb(226, 122, 122);
+  color: #ffffff;
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  border-radius: 48rpx;
+  transition: background-color 0.3s;
+  font-size: 40rpx;
+}
+.box4 button:active {
+  background-color: rgb(160, 144, 144);
+}

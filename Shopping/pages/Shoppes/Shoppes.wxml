@@ -1,0 +1,60 @@
+<view class="container page">
+
+<!-- 轮播图 -->
+<view class="swiper">
+
+ 
+  <swiper indicator-dots="{{indicatorDots}}"
+          autoplay="{{autoplay}}"
+          interval="{{interval}}"
+          duration="{{duration}}"
+          circular="{{circular}}">
+    <block wx:for="{{imageUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="swiper-image" mode="aspectFit"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+</view>
+<view class="box">
+<!-- <van-card
+  tag="热卖"
+  price="{{goods[1].price}}"
+  desc="非常新鲜，非常美味"
+  title="{{goods[1].name}}"
+  thumb="{{goods[1].img[1]}}"
+>
+  <view slot="footer">
+    <van-button size="mini">购物车</van-button>
+    <van-button size="mini">\t\t立即购买</van-button>
+  </view>
+</van-card> -->
+<!-- 商品分类 -->
+<view class="tab">
+  <van-sidebar class="van-sidebar" active-key="{{ activeKey }}" bind:change="onChange">
+  <van-sidebar-item title="文娱" />
+  <van-sidebar-item title="饮食" />
+  <van-sidebar-item title="生活" />
+</van-sidebar>
+</view>
+<!-- 商品列表 -->
+<view class="goods">
+ <!--文娱  -->
+<view data-index="{{index}}" data-id="{{item._id}}" class="goods_item {{item.active?'active':''}}" bindtap="click" wx:for="{{goods}}" wx:key="index"  wx:if="{{activeKey}}===0">
+  <van-card
+  tag="热卖"
+  price="{{item.price}}"
+  desc="非常新鲜，非常美味"
+  title="{{item.name}}"
+  thumb="{{item.img[1]}}"
+>
+  <view slot="footer">
+    <van-button size="mini">\t\t立即购买</van-button>
+  </view>
+</van-card>
+</view>
+</view>
+</view>
+</view>

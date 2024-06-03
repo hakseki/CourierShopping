@@ -1,0 +1,67 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E9%A1%BA%E4%B8%B0",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false,
+    "bigPackageSizeSupport": true,
+    "preloadBackgroundData": false,
+    "skylineRenderEnable": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/TrackingHistoryPage/TrackingHistoryPage",
+          "pathName": "pages/TrackingHistoryPage/TrackingHistoryPage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/Send/Send",
+          "pathName": "pages/Send/Send",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/Addaddress/Addaddress",
+          "pathName": "pages/Addaddress/Addaddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/Address/Address",
+          "pathName": "pages/Address/Address",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/SendCourier/SendCourier",
+          "pathName": "pages/SendCourier/SendCourier",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "3.4.2"
+}

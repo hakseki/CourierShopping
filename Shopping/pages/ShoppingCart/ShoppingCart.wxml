@@ -1,0 +1,155 @@
+<!--pages/ShoppingCart/ShoppingCart.wxml-->
+<!-- <view class="cart">
+<view class="good_item">
+
+<view class="button" bindtap="click">
+<image src="/icon/单选按钮.png" wx:if="{{!isClick}}" mode=""/>
+<image src="/icon/单选按钮 (2).png" wx:if="{{isClick}}" mode=""/>
+</view>
+  <van-card
+  price="2.00"
+  title="111111111111111111111111123333333333333333"
+  thumb="/image/five/1.png"
+/>
+<view class="right">
+  <van-stepper value="{{ 1 }}" bind:change="onChange" />
+  <view class="number">X2</view>
+  </view>
+</view>
+
+<view class="good_item">
+
+<view class="button" bindtap="click">
+<image src="/icon/单选按钮.png" wx:if="{{!isClick}}" mode=""/>
+<image src="/icon/单选按钮 (2).png" wx:if="{{isClick}}" mode=""/>
+</view>
+  <van-card
+  price="2.00"
+  title="111111111111111111111111123333333333333333"
+  thumb="/image/five/1.png"
+/>
+<view class="right">
+  <van-stepper value="{{ 1 }}" bind:change="onChange" />
+  <view class="number">X2</view>
+  </view>
+</view>
+<view class="good_item">
+
+<view class="button" bindtap="click">
+<image src="/icon/单选按钮.png" wx:if="{{!isClick}}" mode=""/>
+<image src="/icon/单选按钮 (2).png" wx:if="{{isClick}}" mode=""/>
+</view>
+  <van-card
+  price="2.00"
+  title="111111111111111111111111123333333333333333"
+  thumb="/image/five/1.png"
+/>
+<view class="right">
+  <van-stepper value="{{ 1 }}" bind:change="onChange" />
+  <view class="number">X2</view>
+  </view>
+</view>
+<view class="good_item">
+
+<view class="button" bindtap="click">
+<image src="/icon/单选按钮.png" wx:if="{{!isClick}}" mode=""/>
+<image src="/icon/单选按钮 (2).png" wx:if="{{isClick}}" mode=""/>
+</view>
+  <van-card
+  price="2.00"
+  title="111111111111111111111111123333333333333333"
+  thumb="/image/five/1.png"
+/>
+<view class="right">
+  <van-stepper value="{{ 1 }}" bind:change="onChange" />
+  <view class="number">X2</view>
+  </view>
+</view>
+<view class="good_item">
+
+<view class="button" bindtap="click">
+<image src="/icon/单选按钮.png" wx:if="{{!isClick}}" mode=""/>
+<image src="/icon/单选按钮 (2).png" wx:if="{{isClick}}" mode=""/>
+</view>
+  <van-card
+  price="2.00"
+  title="111111111111111111111111123333333333333333"
+  thumb="/image/five/1.png"
+/>
+<view class="right">
+  <van-stepper value="{{ 1 }}" bind:change="onChange" />
+  <view class="number">X2</view>
+  </view>
+</view>
+
+
+</view> -->
+<!-- 选择地址 -->
+<view>
+购物车
+</view>
+<!-- 生效商品区域 -->
+<view class="cart-effect">
+    <block wx:for="{{cartEffectList}}" wx:key="key" wx:for-item="item">
+        <checkbox-group class="check-group" wx:if="{{item.merchandises.length > 0}}">
+            <checkbox class="check-store-all" data-store="{{item.store}}" bind:tap="checkStoreAll" checked="{{item.checked || item.merchandiseChecked}}">
+                <view class="store">{{item.store}}</view>
+            </checkbox>
+            <block wx:for="{{item.merchandises}}" wx:key="key" wx:for-item="merchandise">
+                <movable-area class="move-area">
+                    <movable-view class="move-view" x="{{merchandise.x}}" data-store="{{item.store}}" data-id="{{merchandise.id}}" direction="horizontal" out-of-bounds="true" damping="50" inertia="true" bind:touchstart="touchStart" bind:touchmove="touchMove" bind:touchend="touchEnd" bindchange="touchChange">
+                        <view class="info">
+                            <checkbox class="merchandise-check" data-store="{{item.store}}" data-merchandise="{{merchandise}}" bind:tap="checkSingle" checked="{{merchandise.checked}}"></checkbox>
+                            <view class="merchandise">
+                                <image class="merchandise-img" src="{{merchandise.imgUrl}}"></image>
+                                <view class="merchandise-name">{{merchandise.name}}</view>
+                                <view class="merchandise-price">￥{{merchandise.price}}/{{merchandise.unit}}</view>
+                                <view class="merchandise-amount">
+                                    <view class="minus" data-store="{{item.store}}" data-id="{{merchandise.id}}" bind:tap="minusAmount">-</view>
+                                    <view class="amount">{{merchandise.amount}}</view>
+                                    <view class="plus" data-store="{{item.store}}" data-id="{{merchandise.id}}" bind:tap="plusAmount">+</view>
+                                </view>
+                            </view>
+                        </view>
+                    </movable-view>
+                    <view class="delete" data-store="{{item.store}}" data-id="{{merchandise.id}}" bind:tap="deleteMerchandise">删除</view>
+                </movable-area>
+            </block>
+        </checkbox-group>
+    </block>
+</view>
+<!-- 失效商品 -->
+<view class="cart-lapse">
+    <block wx:for="{{cartLapseList}}" wx:key="key">
+        <checkbox-group class="check-group" bindchange="checkStoreAll">
+            <view class="store">已失效商品（{{cartLapseList.length}}）</view>
+            <movable-area class="move-area">
+                <movable-view class="move-view" x="{{item.x}}" data-id="{{item.id}}" direction="horizontal" out-of-bounds="true" damping="50" inertia="true" bind:touchstart="touchStart" bind:touchmove="touchMove" bind:touchend="touchEnd" bindchange="touchChange">
+                    <view class="info">
+                        <checkbox class="merchandise-check" disabled="true"></checkbox>
+                        <view class="merchandise">
+                            <view class="sold-out">
+                                <image class="merchandise-img" src="{{item.imgUrl}}"></image>
+                                <view class="status">{{item.info}}</view>
+                            </view>
+                            <view class="merchandise-name">{{item.name}}</view>
+                            <view class="merchandise-price">￥{{item.price}}/{{item.unit}}</view>
+                            <view class="merchandise-amount">
+                                <view class="minus" style="color: gray;">-</view>
+                                <view class="amount" style="color: gray;">{{item.amount}}</view>
+                                <view class="plus" style="color: gray;">+</view>
+                            </view>
+                        </view>
+                    </view>
+                </movable-view>
+                <view class="delete" data-id="{{item.id}}" bind:tap="deleteMerchandise">删除</view>
+            </movable-area>
+        </checkbox-group>
+    </block>
+</view>
+<!-- 结算 -->
+<view class="count">
+    <checkbox class="check-all" bind:tap="checkAll" checked="{{checkedAll}}">全选</checkbox>
+    <view class="grand">合计：￥{{total}}</view>
+    <button class="lapse {{totalCount > 0 ? 'settle-btn' : ''}}" bind:tap="settleBill" hover-class="settle-bill" disabled="{{totalCount == 0}}" loading="{{showLoading}}">结算({{totalCount}})</button>
+</view>

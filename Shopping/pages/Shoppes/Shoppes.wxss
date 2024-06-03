@@ -1,0 +1,55 @@
+/* 轮播图 */
+.swiper{
+  position: absolute;
+  top:0rpx;
+  height: 300rpx;
+  width: 100%;
+
+  background-color: #fff;
+}
+
+.swiper .swiper-image{
+  width: 100vw;
+ height: 300rpx;
+}
+.box{
+  margin-top: 100rpx;
+  height: 900rpx;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+/* 标签 */
+.tab{
+  height: 900rpx;
+  width: 160rpx;
+  background-color: #fff;
+ border-right: solid rgb(243, 197, 197);
+}
+.van-sidebar{
+  
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+van-sidebar-item{
+  margin-top: 120rpx;
+  
+}
+
+
+.goods{
+  flex-grow: 1;
+  overflow-y: auto; /* 如果货物内容超出，可以滚动查看 */
+}
+.goods_item{
+  transition: all 0.2s;
+}
+
+.active{
+  transform: scale(0.97);
+   
+  box-shadow: 0 15px 30px rgb(195, 255, 245);
+}

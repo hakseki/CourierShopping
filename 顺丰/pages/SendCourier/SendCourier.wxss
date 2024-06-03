@@ -1,0 +1,189 @@
+
+.box{
+  background: linear-gradient(to bottom, #ffffff, #f5dbdb);
+}
+.ad image{
+  width: 100%;
+  height: 400rpx;
+}
+.wrapper{
+  position: relative;
+  margin: 0 auto;
+  width: 640rpx;
+  border-radius: 14rpx;
+  margin-top: -80rpx;
+  z-index: 1
+}
+.vip{
+  padding: 20rpx;
+  background: linear-gradient(to right, #ffffff, #aadfaa);
+ display: flex;
+ flex-direction: row;
+ height: 40rpx;
+ justify-content: space-between;
+ align-items: center;
+
+}
+.vip .one{
+  margin-right: 20rpx;
+}
+ .vip .left image{
+   width: 40rpx;
+   height: 40rpx;
+   margin-right: 13rpx;
+ }
+ .vip .left{
+  display: flex;
+  align-items: center;
+ }
+.vip .gray{
+  font-size: 24rpx;
+}
+.vip .red{
+  font-size: 24rpx;
+  font-weight: 700;
+  color: rgb(253, 59, 59);
+}
+.vip button{
+  display: flex; /* 启用Flex布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+ 
+  height: 40rpx; /* 设置按钮高度 */
+  background-color: rgb(251, 94, 94);
+  color: white;
+  width: auto;
+  font-size: 18rpx;
+}
+.send{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  height: 140rpx;
+  justify-content: space-between;
+ 
+}
+.send .btn{
+  display: flex;
+  flex-direction: row;
+
+}
+.send .btn image{
+  height: 120rpx;
+  width: 120rpx;
+  margin-right: 30rpx;
+}
+.send .btn .big{
+  font-size: 50rpx;
+}
+.send .btn .small{
+  font-size:24rpx;
+}
+/* 小图标 */
+.icon_mode{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+}
+.icon_mode .icon_font{
+  width: 130rpx;
+  height: 130rpx;
+  font-size: 25rpx;
+}
+.icon_mode .icon_font image{
+  width: 80rpx;
+  height: 80rpx;
+}
+/* 广告2 */
+.vip2 .vip{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background: linear-gradient(to right, #ffffff, #aadfaa);
+}
+
+/* 在线客服 */
+.footer{
+  padding: 80rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  height: 140rpx;
+  justify-content: space-between;
+
+}
+.footer .btn{
+  display: flex;
+  flex-direction: row;
+}
+.footer .btn image{
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 30rpx;
+}
+.footer .btn .big{
+  font-size: 30rpx;
+}
+
+/* 底部广告 */
+.footer_ad{
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_ad image{
+  width: 140rpx;
+  height: 140rpx;
+}
+.footer_ad .right button{
+  display: flex; /* 启用Flex布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  height: 40rpx; /* 设置按钮高度 */
+  background-color: rgb(251, 94, 94);
+  color: white;
+  width: auto;
+  font-size: 18rpx;
+}
+.footer_ad .between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+.footer_ad .between .box{
+width: 120rpx;
+margin-right: 10rpx;
+text-align: center;
+color: rgb(163, 78, 78);
+padding: 10rpx;
+border-radius: 20rpx;
+background-color: rgb(255, 236, 203);
+}
+.footer_ad .between .box .big{
+  font-size: 40rpx; 
+
+}
+.footer_ad .between .box .small{
+  font-size: 23rpx; 
+}
+.footer_ad .right{
+  background-color: rgb(255, 236, 203);
+  height: 150rpx;
+  width: 150rpx;
+  text-align: center;
+ padding-top: 10rpx;
+ border-radius: 18rpx;
+}
+.footer_ad .right .text{
+  color: rgb(251, 94, 94);
+  margin-top: 10rpx;
+  font-size: 40rpx;
+  font-weight: 900;
+}
+.footer_ad .right button{
+  margin-top: 30rpx;
+}

@@ -1,0 +1,18 @@
+<view class="contain-header">
+      <view class="number">
+        <view class="name">{{company}}</view>:
+        <text>{{courier_id}}</text>
+        <image src="/icon/copy.png" mode="aspectFitaf" bindtap="copyText"/>
+      </view>
+      <view class="text">
+        <view class="left">
+          <view class="box1">寄件人：{{sender}}</view>
+          <view class="box2">{{addressOne}}</view>
+        </view>
+        <image src="/icon/right.png" mode="heightFix"/>
+        <view class="left">
+          <view class="box1">收件人：{{recipients}}</view>
+          <view class="box2">{{addressTwo}}</view>
+        </view>
+      </view>
+</view>

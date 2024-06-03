@@ -1,0 +1,22 @@
+<view class="wrapper">
+<!-- 头部-->
+<view class="header">
+<image src="/icon/man.png" mode="aspectFit"/>
+<view class="name">李田所 114514191910</view>
+</view>
+
+<!-- 广告 -->
+<view class="ad">
+    <image src="/icon/ad.png" mode="aspectFill" />
+</view>
+<!-- 搜索 -->
+<Search></Search>
+<!-- 内容 -->
+<view class="contain">
+<view class="border">
+<Process company="理塘速递" number="DZ1145141919" sender="李田所" recipients="吴金金金金" addressOne="下北泽" addressTwo="北京"></Process>
+<Process company="理塘速递" number="DZ114514" sender="田所浩二" recipients="吴金" addressOne="下北泽" addressTwo="北京"></Process>
+</view>
+</view>
+
+</view>

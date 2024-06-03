@@ -1,0 +1,11 @@
+.wrapper{
+  margin: 0 auto;
+  width:600rpx ;
+}
+
+.picker-contain{
+  width: 200rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  margin-right: 30rpx;
+}

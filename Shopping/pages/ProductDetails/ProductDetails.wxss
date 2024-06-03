@@ -1,0 +1,131 @@
+
+/*轮播控件*/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+.home-swiper {
+  width: 100%;
+  height: 500rpx;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+.box1{
+  align-items: center;
+  height: 160rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+  background: linear-gradient(to right, #e3c7ee, hsl(220, 56%, 83%));
+}
+.box1 .left .big{
+  font-size: 40rpx;
+  color: red;
+}
+.box1 .left .small {
+  font-size: 32rpx;
+  color: red;
+  margin-bottom: 10rpx;
+}
+.box1 .right{
+  font-size: 36rpx;
+  font-weight: 400;
+  margin-left: 320rpx;
+}
+.price{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  height: 100rpx;
+  width: 100%;
+  font-size: 40rpx;
+  color: rgb(245, 55, 55);
+  font-weight: 800;
+}
+.context{
+  display: flex;
+  width: 100%;
+  height: 120rpx;
+  margin-left: 38rpx;
+  color: burlywood;
+  justify-content: space-between;
+}
+.context image{
+  margin-top: -16rpx;
+  margin-left: 10%;
+  margin-right: 10%;
+  width:150rpx;
+  height: 150rpx;
+}
+
+
+.footer_ad{
+  position: absolute;
+  width: 100%;
+  top: 340rpx;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right,rgba(255, 205, 205, 0.5), rgba(186, 253, 255, 0.5));
+  opacity: 0.9;
+}
+.footer_ad image{
+  width: 140rpx;
+  height: 140rpx;
+}
+.footer_ad .right button{
+  display: flex; /* 启用Flex布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  height: 40rpx; /* 设置按钮高度 */
+  background-color: rgb(251, 94, 94);
+  color: white;
+  width: auto;
+  font-size: 18rpx;
+}
+.footer_ad .between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+.footer_ad .between .box{
+width: 120rpx;
+margin-right: 10rpx;
+text-align: center;
+color: rgb(163, 78, 78);
+padding: 10rpx;
+border-radius: 20rpx;
+background-color: rgb(255, 236, 203);
+}
+.footer_ad .between .box .big{
+  font-size: 40rpx; 
+
+}
+.footer_ad .between .box .small{
+  font-size: 23rpx; 
+}
+.footer_ad .right{
+  background-color: rgb(255, 236, 203);
+  height: 150rpx;
+  width: 150rpx;
+  text-align: center;
+ padding-top: 10rpx;
+ border-radius: 18rpx;
+}
+.footer_ad .right .text{
+  color: rgb(251, 94, 94);
+  margin-top: 10rpx;
+  font-size: 40rpx;
+  font-weight: 900;
+}
+.footer_ad .right button{
+  margin-top: 30rpx;
+}

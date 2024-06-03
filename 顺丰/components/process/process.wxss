@@ -1,0 +1,35 @@
+.contain-header{
+  padding-left: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: #c7e1ff;
+  border-radius: 18rpx;
+  margin-bottom: 20rpx;
+}
+.contain-header .text{
+  align-items: center;
+  height: 100rpx;
+  display: flex;
+  
+}
+.contain-header .text image{
+  height: 50%;
+  width: 50%;
+}
+.contain-header .number{
+  align-items: center;
+  height: 60rpx;
+  display: flex;
+  flex-direction: row;
+}
+.contain-header .number text{
+  margin-left: 20rpx;
+}
+.contain-header .number image{
+  margin-left: 20rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+.contain-header .left{
+   width: 300rpx;
+   
+}

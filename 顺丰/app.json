@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/SendCourier/SendCourier",
+    "pages/Address/Address",
+    "pages/Addaddress/Addaddress",
+    "pages/Send/Send",
+    "pages/login/login",
+    "pages/me/me",
+    "pages/TrackingHistoryPage/TrackingHistoryPage"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "selectedColor": "#82b7f3", 
+    "list": [{
+      "pagePath": "pages/SendCourier/SendCourier",
+      "text": "寄快递",
+      "iconPath": "/icon/tab/cn-寄快递.png",
+      "selectedIconPath": "/icon/tab/cn-寄快递 (1).png"
+    },
+    {
+      "pagePath": "pages/TrackingHistoryPage/TrackingHistoryPage",
+      "text": "查快递",
+      "iconPath": "/icon/tab/基本信息查询.png",
+      "selectedIconPath": "/icon/tab/基本信息查询 (1).png"
+    },
+    {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "/icon/tab/女王.png",
+      "selectedIconPath": "/icon/tab/女王 (1).png"
+    }
+  ]
+  }
+}

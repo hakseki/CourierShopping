@@ -1,0 +1,108 @@
+/* pages/add/add.wxss */
+.box{ 
+  height: 1110rpx;
+  background: linear-gradient(to bottom, #b9e4cc, #f3def2);
+}
+ 
+.box0{
+  width: 180rpx;
+  height: 60rpx;
+}
+.box0 button{
+  font-weight: 900;
+  background-color: rgb(156, 178, 211);
+  color: #ffffff;
+  width: 160rpx;
+  height: 60rpx;
+  border-radius: 24rpx;
+  transition: background-color 0.3s;
+  font-size: 24rpx;
+}
+.box0 button:active {
+  background-color: rgb(160, 144, 144);
+}
+
+.box1{
+ margin-left: 30rpx;
+  margin-top: 40rpx;
+ margin-right: 30rpx;
+}
+.box1 .one{
+  height: 80rpx;
+  border-top: none;
+ font-size: 40rpx;
+  margin-top: 80rpx;
+}
+.box1 .two{
+  height: 80rpx;
+  border-bottom: 4rpx solid rgb(78, 77, 77);
+  border-top: none;
+  display: flex;
+  font-size: 34rpx;
+  margin-top: 40rpx;
+}
+.box1 .two .left{
+  margin-top: 20rpx;
+  width: 300rpx;
+  height: 60rpx;
+}
+.box1 .two .right{
+  margin-top: 20rpx;
+  width: 440rpx;
+  height: 60rpx;
+}
+.box1 .three{
+ 
+  height: 60rpx;
+  border-bottom: 4rpx solid rgb(78, 77, 77);
+  border-top: none;
+  margin-top: 80rpx;
+  font-size: 34rpx;
+}
+.box1 .four{
+ 
+  height: 60rpx;
+  border-bottom: 4rpx solid rgb(78, 77, 77);
+  border-top: none;
+  font-size: 34rpx;
+}
+.box1 .four .left{
+  width: 540rpx;
+  height: 80rpx;
+  margin-top: 80rpx;
+}
+.box1 .five{
+ 
+  height: 60rpx;
+  border-bottom: 4rpx solid rgb(78, 77, 77);
+  border-top: none;
+  font-size: 34rpx;
+}
+.box1 .five .left{
+  width: 540rpx;
+  height: 60rpx;
+  margin-top: 80rpx;
+}
+.box1 .six{
+  margin-bottom: 20rpx;
+  width: 740rpx;
+  height: 80rpx;
+  border-bottom: none;
+  border-top: none
+}
+
+.box2 button {
+  margin-top: 300rpx;
+  font-weight: 900;
+  background-color: rgb(226, 122, 122);
+  color: #ffffff;
+  width: 300rpx;
+  height: 100rpx;
+  text-align: center;
+  border-radius: 48rpx;
+  transition: background-color 0.3s;
+  font-size: 40rpx;
+}
+.box2 button:active {
+  background-color: rgb(160, 144, 144);
+}

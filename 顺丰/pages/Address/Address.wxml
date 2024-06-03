@@ -1,0 +1,23 @@
+<!--pages/Address/Address.wxml-->
+<!--pages/address/address.wxml-->
+<view class="box">
+<view class="user">
+
+<view class="box1" wx:for="{{users}}" wx:for-item="user" wx:key="index">
+<view class="on">
+<view class="big"><text>
+{{user.name}} {{user.phone}}</text></view>
+<view class="small"><text>
+{{user.province}}{{user.district}}{{user.detail_address}}</text></view>
+</view>
+<view class="off"><view class="one">
+<image src="/images/编辑.png" data-id="{{user._id}}" bindtap="upData"></image></view><view class="two">
+<image src="/images/删除.png" data-id="{{user._id}}" bindtap="ButtonDell"></image></view>
+</view>
+</view>
+</view>
+<view class="box2">
+<button class="one" bindtap="ShowUsers">管理</button>
+<button class="two" bindtap="btn">新增地址</button>
+</view>
+</view>

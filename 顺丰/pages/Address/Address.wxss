@@ -1,0 +1,69 @@
+/* pages/address/address.wxss */
+ 
+.user{
+  margin-top: 90rpx;
+}
+.box1{
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+  margin-bottom: 20rpx;
+  height: 230rpx;
+  border-radius: 48rpx;
+  background-color: rgb(206, 230, 233);
+}
+.box1 .on{
+  border-bottom: 4rpx solid rgb(78, 77, 77);
+}
+.box1 .on .small{
+  font-size: 30rpx;
+}
+.box1 .off .one image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 540rpx;
+  margin-top: 20rpx;
+}
+.box1 .off .two image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 50rpx;
+  margin-top: 20rpx;
+}
+.box1 .off{
+  display: flex;
+  font-size: 30rpx;
+}
+
+.box2{
+  display: flex;
+  margin-top: 440rpx;
+  border-radius: 48rpx;
+}
+.box2 .two{
+  font-weight: 900;
+  background-color: rgb(226, 122, 122);
+  color: #ffffff;
+  width: 300rpx;
+  height: 80rpx;
+  text-align: center;
+  border-radius: 48rpx;
+  transition: background-color 0.3s;
+  font-size: 40rpx;
+}
+.box2 .two:active {
+  background-color: rgb(160, 144, 144);
+}
+.box2 .one{
+  font-weight: 900;
+  background-color: rgb(160, 190, 178);
+  color: rgb(250, 250, 250);
+  width: 300rpx;
+  height: 80rpx;
+  text-align: center;
+  border-radius: 48rpx;
+  transition: background-color 0.3s;
+  font-size: 40rpx;
+}
+.box2 .one:active {
+  background-color: rgb(160, 144, 144);
+}

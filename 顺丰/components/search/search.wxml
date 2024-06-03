@@ -1,0 +1,15 @@
+ <!-- 搜索 -->
+ 
+    <!-- 定义了一个视图容器，这是微信小程序页面的基本布局单位 -->
+    <view class="picker-contain">
+      <!-- picker 组件，用于创建下拉选择框 -->
+
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view wx:if="{{index===-1}}" bindtap="btn">请选择快递公司</view>
+        <!-- 用来显示当前选中项的视图 -->
+        <view class="picker">
+          {{array[index]}} <!-- 动态显示当前选中项的文本 -->
+        </view>
+      </picker>
+    </view>
+    

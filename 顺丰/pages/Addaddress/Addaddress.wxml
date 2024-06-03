@@ -1,0 +1,37 @@
+<!--pages/add/add.wxml-->
+<view class="wrapper">
+<view class="box">
+ 
+<view class="box1">
+<view class="one">联系人信息</view>
+<view class="two">
+<view class="left">
+<input type="text" placeholder="真实姓名" class="name" model:value="{{name}}" />
+</view>
+<view class="right">
+<input type="text" placeholder="电话" class="phone" model:value="{{phone}}" />
+</view>
+</view>
+<view class="three">
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+       {{region[0]}} {{region[1]}} {{region[2]}}
+    </view>
+  </picker>
+</view>
+<view class="four">
+<view class="left">
+<input type="text" placeholder="详细地址（例如**街**号**）" class="address" model:value="{{detail_address}}" />
+</view>
+</view>
+<view class="five">
+<view class="left">
+<input type="text" placeholder="公司名称（选填）" class="corporation" />
+</view>
+</view>
+</view>
+<view class="box2">
+<button bindtap="ButtonAdd">确定</button>
+</view>
+</view>
+</view>
